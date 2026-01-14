@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+.b{
+    border: 13px solid red
+}
+:root{
+    --bg: #17191e;
+    --primary: #f7f7f7;
+    --secondary: #580ef6;
+    --ternary: #3d3a55;
+    --extra: #11022f;
+    --quaternary: #6c6e7a;
+    --fifth: #140328;
+    --blend: #bf03b2
+}
+
+body {
+  font-family: sans-serif;
+  width: 100%;
+}
+
+#loader {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(to right, var(--bg), var(--extra));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.loader-content {
+  width: 300px;
+  text-align: center;
+  color: #fff;
+}
+
+.loader-icons{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+span i{
+    color: var(--primary);
+    font-size: 16px;
+    box-shadow: 0 0 2px 3px var(--ternary),
+    0 0 10px var(--ternary),
+    0 0 15px var(--ternary);
+    padding: 10px;
+    border-radius: 50%;
+    
+}
+
+.p-website-title{
+    color: var(--secondary)
+}
+.www-com{
+    color: var(--primary);
+}
+
+#content{
+    background: var(--bg);
+}
+
+.body{
+   background: linear-gradient(135deg, var(--bg), var(--fifth), var(--fifth), var(--bg));
+}
+
+#home{
+    min-height: 100vh;
+}
+.home-cont{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  min-height: 90vh;
+}
+
+.ready-to-innovate{
+  background: linear-gradient(
+    to right,
+    #bf03b2,
+    var(--secondary)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 4px 8px;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+.fullstack-developer p{
+  font-size: 55px;
+  font-weight: 900;
+  font-family: "Archivo Black", sans-serif;
+}
+
+.fullstack{
+  color: var(--primary)
+}
+.developer{
+  background: linear-gradient(
+    to left,
+    #bf03b2,
+    var(--secondary)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fullstack-developer{
+  line-height: 50px;
+}
+.summary{
+  color: var(--primary);
+  font-size: 12px;
+}
+
+.td-model{
+  width: 200px;
+  height: 200px;
+}
+
+.home-skills span{
+  color: var(--quaternary);
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
+  font-size: 13px;
+  padding: 3px 8px;
+  border-radius: 5px;
+  box-shadow: 0 0 2px white;
+}
+
+.home-btns button{
+  padding: 5px 10px;
+  background:  var(--secondary);
+  color: var(--primary);
+  border-radius: 5px;
+}
+
+nav{
+  display: flex;
+  gap: 5px;
+  height: 10vh;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  align-items: center;
+  font-family: "Archivo Black", sans-serif;
+}
+
+nav a{
+  padding: 3px 7px;
+  color: var(--primary);
+  font-size: 13px;
+}
+
+.about{
+    background: linear-gradient(
+    to left,
+    #bf03b2,
+    var(--secondary)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 40px;
+  font-family: "Archivo Black", sans-serif;
+  width: fit-content;
+  margin-top: 50px
+}
+
+#about{
+  min-height: 100vh;
+  width: 100%;
+  
+}
+.about-cont{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.profile{
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.about-text{
+  color: var(--quaternary);
+}
+
+.profile{
+  filter: grayscale(80%);
+  background-blend-mode: multiply;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/img/505748868_1465108197807591_1777947388608731063_n\ -\ Copy.jpg") no-repeat top/contain ;
+  width: 300px;
+  height: 300px;
+}
+.hello{
+  color: var(--primary);
+  font: 300 15px "Archivo Black", sans-serif; 
+
+}
+.summary-cont h1{
+    background: linear-gradient(
+    to left,
+    var(--blend),
+    var(--secondary),
+    var(--secondary)
+  );
+  font: 900 25px "Archivo Black", sans-serif; 
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.summary-cont p{
+
+}
