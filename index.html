@@ -6,11 +6,13 @@
     <title>Emman</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/medium_screen.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script type="module"
      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
     </script>
-
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/Flip.min.js"></script>
 </head>
 <body>
     <!--<div id="loader">
@@ -30,70 +32,133 @@
     </div>
    </div>-->
 
-  <main class="body w-100">
-    <section id="home" class="pt-10">
-        <nav class="w-100 justify-center">
+  <main class="body ">
+    <div id="home" class="pt-10 md:pt-0">
+        <nav class="w-100 justify-center md:justify-end md:pr-10">
           <a href="">Home</a>
           <a href="">Skills</a>
           <a href="">About</a>
           <a href="">Projects</a>
           <a href="">Contact</a>
         </nav>
-        <div class="home-cont flex-col pt-10 mt-10 items-center">
-          <div class="titles">
+        <div class="home-cont flex-col pt-10 mt-10  md:mt-0  items-center  md:flex-row  md:justify-evenly ">
+          <div class="titles md:ml-40">
             <span class="ready-to-innovate mb-5">Ready to Innovate</span>
             <div class="fullstack-developer">
               <p class="fullstack font mt-2">FullStack</p>
               <p class="developer w-min">Developer</p>
             </div>
-            <p class="summary my-3 text-center"> Currently an Associate Systems Developer </p>
-            <p class="text-gray-400 text-xs w-75 mb-3 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, sint doloremque? di incidunt vel vero, suscipit et facere reiciendis, itaque ab i</p>
-            <div class="flex home-skills gap-2 justify-center">
-              <span><p>React</p></span>
+            <p class="summary my-3 text-center md:text-start"> Currently an Associate Systems Developer </p>
+            <p class="text-gray-400 text-xs w-75 mb-3 text-center md:text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, sint doloremque? di incidunt vel vero, suscipit et facere reiciendis, itaque ab i</p>
+            <div class="flex home-skills gap-2 justify-center md:justify-start">
               <span><p>JavaScript</p></span>
               <span><p>PHP</p></span>
-              <span><p>Laravel</p></span>
+              <span><p>C#</p></span>
+              <span><p>VB</p></span>
             </div>
-            <div class="home-btns flex g-5 mt-5 justify-center">
+            <div class="home-btns flex g-5 mt-5 justify-center md:justify-start">
               <button>Read more</button>
               <button class="ml-4">Download CV</button>
             </div>
           </div>
-          <div class="home-img  flex justify-center mt-5">
+          <div class=" home-img items-end  ">
+          <div class=" justify-center model md:mt-0 ">
             <model-viewer
+              id="my-model2"
               src="Other/3d_clipart_-_webdev.glb"
-              auto-rotate
               shadow-intensity="1"
               exposure="1"
-              camera-controls
-              camera-orbit="0deg 75deg 20m"
-              style="width:300px;height:300px">
+              class="model3d "
+              camera-orbit="0deg 50deg 20m" 
+             >
             </model-viewer>
           </div>
         </div>
-    </section>
-    <section id="about">
+        </div>        
+    </div>
+    <section id="about" class="profile">
       <div class="about-cont">
         <h2 class="about">About Me</h2>
-        <p class="about-text w-75 text-sm mb-10">Lorem ipsum dolor sit amet, incididunt ut labore et dolore magna aliqua.</p>
+        <p class="about-text w-75 text-sm mb-10 text-gray-400">Lorem ipsum dolor sit amet, incididunt ut labore et dolore magna aliqua.</p>
       </div>
-      <div class="flex flex-col-reverse w-100 items-center">
+      <div class="flex flex-col md:flex-row md:justify-between md:px-29 items-center">
         <div class="summary-cont">
+        <div class="profil w-75">
+          <img src="/img/me3.jpg" alt="Profile Picture" class="w-40 h-auto rounded-lg shadow-lg">
+        </div>
           <h2 class="hello mt-10">Hello, I'm</h2>
-          <h1 >Emmanuel Manansala</h1>
-          <p class="text-gray-400 w-80">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis exercitationem a consectetur necessitatibus culpa. Repellat voluptates exercitationem sit natus a quaerat facere sed repellendus, odit quibusdam explicabo, iusto facilis libero?</p>
+          <h1 class="text-2xl md:text-5xl font-black">Emmanuel Manansala</h1>
+          <p class="text-gray-400 w-80 md:w-160 text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis exercitationem a consectetur necessitatibus culpa. Repellat voluptates exercitationem sit natus a quaerat facere sed repellendus, odit quibusdam explicabo, iusto facilis libero?</p>
             <div class="home-btns flex g-5 mt-5">
               <button>View Skills</button>
               <button class="ml-4">Download Cv</button>
             </div>
         </div>
-        <div class="profile w-75"></div>
       </div>
     </section>
-  </main>
-  <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
-<script src="https://unpkg.com/three@0.160.0/examples/js/loaders/GLTFLoader.js"></script>
+    <section id="skills">
+      <div class="">
+        <div class="about-cont my-10 ">
+          <h1 class="about upp">
+            Skills
+          </h1>
+        </div>
+        <div class="skill-icons px-4 flex-col items-center b">
+          <div class="skills-aa b">
+          <div class="frontend upp ">
+            <h1 class=" bold text-md white-bg">Desktop Apps</h1>
+            <div class="flex flex-wrap frontend-skill-cont">
+              <span><img src="svg/csharp-svgrepo-com.svg" alt=""></span>
+              <span><img src="svg/vb-svgrepo-com.svg" alt=""></span>
+              <span class="dotnet"><img src="svg/dotnet-svgrepo-com.svg" alt=""></span>
+            </div>
+          </div>
+          <div class="frontend upp">
+            <h1 class="bold text-md white-bg">Frontend</h1>
+            <div class="flex flex-wrap g-20 frontend-skill-cont">
+              <span><img src="svg/html-svgrepo-com.svg" alt=""></span>
+              <span><img src="svg/css-svgrepo-com.svg" alt=""></span>
+              <span><img src="svg/js-svgrepo-com.svg" alt=""></span>
+              <span><img src="svg/bootstrap-svgrepo-com.svg" alt=""></span>
+              <span><img src="svg/tailwind-svgrepo-com.svg" alt=""></span>
+              <span><img src="svg/react-svgrepo-com.svg" alt=""></span>
+            </div>
+          </div>
+          <div class="frontend upp">
+            <h1 class="bold text-md white-bg ">BackEnd</h1>
+            <div class="flex flex-wrap g-10 frontend-skill-cont">
+              <span><img src="svg/php-svgrepo-com.svg" alt=""></span>
+              <span><img src="svg/laravel-svgrepo-com.svg" alt=""></span>
+              <span><img src="svg/codeigniter-svgrepo-com.svg" alt=""></span>
+              <span><img src="svg/nodejs-svgrepo-com.svg" alt=""></span>
+            </div>
+          </div>
+          <div class="frontend upp">
+            <h1 class=" bold text-md white-bg ">Database</h1>
+            <div class="flex flex-wrap g-10 frontend-skill-cont">
+              <span><img src="svg/mysql-logo-svgrepo-com.svg" alt=""></span>
+              <span><img src="svg/mongo-svgrepo-com.svg" alt=""></span> 
+            </div>
+          </div>   
+        </div>
+      </div>
+      </div>
+      <section id="#projects upp">
+        <div class="projects-cont pt-20">
+              <div class="about-cont"  >
+          <h1 class="about">Projects</h1>
+        </div>
+        <div class="projects">
+          
+        </div>
+        </div>
+      </section>
+    </main>
+  <script src="https://unpkg.com/three@0.160.0/examples/js/loaders/GLTFLoader.js"></script>
   <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   <script src="script.js"></script>
+  <script src="/js/3daAnim.js"></script>
 </body>
 </html>
