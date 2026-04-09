@@ -192,11 +192,11 @@ gsap.from(".about-img", {
 gsap.from(".about-content h2", {
     y: 80,
     opacity: 0,
-    duration: 1.2,
-    ease: "power3.out",
+    duration: .5,
+    ease: "ease.in",
     scrollTrigger: {
         trigger: ".about-content h2",
-        start: "top 90%"
+        start: "top 70%"
     }
 });
 
@@ -277,3 +277,79 @@ gsap.utils.toArray(".skill-item").forEach((item) => {
 
 // 🔄 Refresh
 window.addEventListener("resize", () => ScrollTrigger.refresh());
+
+// PERFECT TIMELINE ANIMATION - Side entry based on left/right class
+gsap.registerPlugin(ScrollTrigger);
+
+document.addEventListener('DOMContentLoaded', () => {
+  
+  // 1. PROGRESS LINE (grows as you scroll)
+  gsap.fromTo(".line-fill", 
+    { height: 0, transformOrigin: "top center" },
+    {
+      height: "100%",
+      scrollTrigger: {
+        trigger: "#background",
+        start: "top center",
+        end: "bottom center",
+        scrub: true,
+        ease: "none"
+      }
+    }
+  );
+
+  // 2. EACH ITEM ANIMATES FROM ITS SIDE
+  gsap.utils.toArray(".timeline-items .item").forEach((item, i) => {
+    
+    const isLeft = item.classList.contains('left');
+    const startX = isLeft ? -150 : 150;  // LEFT items from RIGHT, RIGHT items from LEFT
+    
+    gsap.fromTo(item, 
+      { 
+        x: startX,
+        opacity: 0,
+        scale: 0
+      },
+      {
+        x: 0,
+        opacity: 1,
+        scale: 1,
+        duration: 0.8,
+        ease: "back.out(1.7)",
+        scrollTrigger: {
+          trigger: item,
+          start: "top 85%",
+          end: "bottom 60%",
+          toggleActions: "play none none reverse"
+        }
+      }
+    );
+    
+    // 3. CONTENT INSIDE EACH ITEM
+    gsap.fromTo(item.querySelectorAll("h3, p"), 
+      { x: isLeft ? 50 : -50, opacity: 0 },
+      {
+        x: 0,
+        opacity: 1,
+        duration: 0.6,
+        stagger: 0.1,
+        delay: 0.2,
+        scrollTrigger: {
+          trigger: item,
+          start: "top 80%",
+        }
+      }
+    );
+  });
+
+  // 4. SECTION TITLE
+  gsap.from(".section-title", {
+    y: -50,
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+      trigger: "#background",
+      start: "top 90%"
+    }
+  });
+});

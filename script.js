@@ -129,3 +129,4 @@ function openModal() {
 function confirmModal() {
   document.getElementById("successModal").classList.remove("show");
 }
+
