@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
     #my-model2{
         width: 500px;
         height: 400px;
@@ -17,9 +17,12 @@
         width: 60px;
     }
     .frontend-skill-cont{
-        gap: 10%;
+        gap: 3%;
     }
     .skills-aa{
-        
+        width: 60%;
+    }
+    .exp-cont {
+       margin: 150px 0; 
     }
 }

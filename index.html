@@ -1,20 +1,24 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Emman</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/medium_screen.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script type="module"
-     src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
-    </script>
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/medium_screen.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/Flip.min.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <!--<div id="loader">
         <div class="loader-content">
             <div class="loader-icons">
@@ -32,8 +36,8 @@
     </div>
    </div>-->
 
-  <main class="body ">
-    <div id="home" class="pt-10 md:pt-0">
+    <main class="body">
+      <div id="home" class="pt-10 md:pt-0">
         <nav class="w-100 justify-center md:justify-end md:pr-10">
           <a href="">Home</a>
           <a href="">Skills</a>
@@ -41,124 +45,535 @@
           <a href="">Projects</a>
           <a href="">Contact</a>
         </nav>
-        <div class="home-cont flex-col pt-10 mt-10  md:mt-0  items-center  md:flex-row  md:justify-evenly ">
+        <div
+          class="home-cont flex-col pt-10 mt-10 md:mt-0 items-center md:flex-row md:justify-evenly"
+        >
           <div class="titles md:ml-40">
-            <span class="ready-to-innovate mb-5">Ready to Innovate</span>
+            <div class="ready-to-innovate">Ready to Innovate</div>
             <div class="fullstack-developer">
               <p class="fullstack font mt-2">FullStack</p>
               <p class="developer w-min">Developer</p>
             </div>
-            <p class="summary my-3 text-center md:text-start"> Currently an Associate Systems Developer </p>
-            <p class="text-gray-400 text-xs w-75 mb-3 text-center md:text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, sint doloremque? di incidunt vel vero, suscipit et facere reiciendis, itaque ab i</p>
+            <p class="summary my-3 text-center md:text-start">
+              Currently a Web Developer
+            </p>
+            <p
+              class="text-gray-400 text-xs w-75 mb-3 text-center md:text-start desc"
+            ></p>
             <div class="flex home-skills gap-2 justify-center md:justify-start">
               <span><p>JavaScript</p></span>
               <span><p>PHP</p></span>
               <span><p>C#</p></span>
               <span><p>VB</p></span>
             </div>
-            <div class="home-btns flex g-5 mt-5 justify-center md:justify-start">
+            <div
+              class="home-btns flex g-5 mt-5 justify-center md:justify-start"
+            >
               <button>Read more</button>
               <button class="ml-4">Download CV</button>
             </div>
           </div>
-          <div class=" home-img items-end  ">
-          <div class=" justify-center model md:mt-0 ">
-            <model-viewer
-              id="my-model2"
-              src="Other/3d_clipart_-_webdev.glb"
-              shadow-intensity="1"
-              exposure="1"
-              class="model3d "
-              camera-orbit="0deg 50deg 20m" 
-             >
-            </model-viewer>
-          </div>
-        </div>
-        </div>        
-    </div>
-    <section id="about" class="profile">
-      <div class="about-cont">
-        <h2 class="about">About Me</h2>
-        <p class="about-text w-75 text-sm mb-10 text-gray-400">Lorem ipsum dolor sit amet, incididunt ut labore et dolore magna aliqua.</p>
-      </div>
-      <div class="flex flex-col md:flex-row md:justify-between md:px-29 items-center">
-        <div class="summary-cont">
-        <div class="profil w-75">
-          <img src="/img/me3.jpg" alt="Profile Picture" class="w-40 h-auto rounded-lg shadow-lg">
-        </div>
-          <h2 class="hello mt-10">Hello, I'm</h2>
-          <h1 class="text-2xl md:text-5xl font-black">Emmanuel Manansala</h1>
-          <p class="text-gray-400 w-80 md:w-160 text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis exercitationem a consectetur necessitatibus culpa. Repellat voluptates exercitationem sit natus a quaerat facere sed repellendus, odit quibusdam explicabo, iusto facilis libero?</p>
-            <div class="home-btns flex g-5 mt-5">
-              <button>View Skills</button>
-              <button class="ml-4">Download Cv</button>
-            </div>
-        </div>
-      </div>
-    </section>
-    <section id="skills">
-      <div class="">
-        <div class="about-cont my-10 ">
-          <h1 class="about upp">
-            Skills
-          </h1>
-        </div>
-        <div class="skill-icons px-4 flex-col items-center b">
-          <div class="skills-aa b">
-          <div class="frontend upp ">
-            <h1 class=" bold text-md white-bg">Desktop Apps</h1>
-            <div class="flex flex-wrap frontend-skill-cont">
-              <span><img src="svg/csharp-svgrepo-com.svg" alt=""></span>
-              <span><img src="svg/vb-svgrepo-com.svg" alt=""></span>
-              <span class="dotnet"><img src="svg/dotnet-svgrepo-com.svg" alt=""></span>
+          <div class="home-img items-end">
+            <div class="justify-center model md:mt-0 hero-contents">
+              <div class="home-img hero-model-section">
+                <div class="justify-center model md:mt-0 hero-model-wrapper">
+                  <model-viewer
+                    id="heroModel"
+                    src="Other/3d_clipart_-_webdev.glb"
+                    shadow-intensity="1"
+                    exposure="1"
+                    class="model3d hero-model"
+                    camera-orbit="0deg 50deg 20m"
+                    auto-rotate
+                    ar
+                    loading="eager"
+                  ></model-viewer>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="frontend upp">
-            <h1 class="bold text-md white-bg">Frontend</h1>
-            <div class="flex flex-wrap g-20 frontend-skill-cont">
-              <span><img src="svg/html-svgrepo-com.svg" alt=""></span>
-              <span><img src="svg/css-svgrepo-com.svg" alt=""></span>
-              <span><img src="svg/js-svgrepo-com.svg" alt=""></span>
-              <span><img src="svg/bootstrap-svgrepo-com.svg" alt=""></span>
-              <span><img src="svg/tailwind-svgrepo-com.svg" alt=""></span>
-              <span><img src="svg/react-svgrepo-com.svg" alt=""></span>
-            </div>
-          </div>
-          <div class="frontend upp">
-            <h1 class="bold text-md white-bg ">BackEnd</h1>
-            <div class="flex flex-wrap g-10 frontend-skill-cont">
-              <span><img src="svg/php-svgrepo-com.svg" alt=""></span>
-              <span><img src="svg/laravel-svgrepo-com.svg" alt=""></span>
-              <span><img src="svg/codeigniter-svgrepo-com.svg" alt=""></span>
-              <span><img src="svg/nodejs-svgrepo-com.svg" alt=""></span>
-            </div>
-          </div>
-          <div class="frontend upp">
-            <h1 class=" bold text-md white-bg ">Database</h1>
-            <div class="flex flex-wrap g-10 frontend-skill-cont">
-              <span><img src="svg/mysql-logo-svgrepo-com.svg" alt=""></span>
-              <span><img src="svg/mongo-svgrepo-com.svg" alt=""></span> 
-            </div>
-          </div>   
         </div>
       </div>
-      </div>
-      <section id="#projects upp">
-        <div class="projects-cont pt-20">
-              <div class="about-cont"  >
-          <h1 class="about">Projects</h1>
-        </div>
-        <div class="projects">
-          
-        </div>
+
+      <section class="hero">
+        <div class="hero-content">
+          <h1>Emmanuel Manansala</h1>
+          <p>Full Stack Developer</p>
         </div>
       </section>
+      <section class="about">
+        <div class="about-img-container">
+          <img
+            src="img/me4.png"
+            alt="About Me"
+            class="about-img"
+            style="object-position: top center"
+          />
+        </div>
+        <div class="about-content relative group">
+          <!-- Content -->
+          <div class="relative z-10 ">
+       
+            <div class="flex justify-center">
+            </div>
+
+            <h2
+              class="section-title text-4xl lg:text-5xl font-bold text-center bg-gradient-to-r from-white via-slate-200 to-slate-300 bg-clip-text text-transparent drop-shadow-lg hover:drop-shadow-2xl transition-all duration-300"
+            >
+              <strong>About Me</strong>
+            </h2>
+
+            <!-- Subtitle with Typing Effect Container -->
+            <div class="text-center p-0 " style="">
+              <h6
+                class="text-lg lg:text-xl max-w-2xl mx-auto leading-relaxed bg-gradient-to-r from-slate-300 to-slate-400 bg-clip-text text-transparent"
+              >
+                I'm a passionate full-stack developer with experience in
+                building dynamic web applications. I enjoy turning complex
+                problems into simple, beautiful, and intuitive designs.
+              </h6>
+
+              <h6
+                class="text-lg max-w-xl mx-auto"
+              >
+                When I'm not coding, you'll find me exploring new
+                technologies...
+              </h6>
+            </div>
+
+            <div
+              class="grid grid-cols-2 md:grid-cols-4 "
+            >
+              <div class="text-center p-4">
+                <div class="text-2xl font-bold text-cyan-400 mb-1">10+</div>
+                <div class="text-sm text-slate-400">Projects</div>
+              </div>
+              <div class="text-center p-4">
+                <div class="text-2xl font-bold text-purple-400 mb-1">3+</div>
+                <div class="text-sm text-slate-400">Years Exp</div>
+              </div>
+              <div class="text-center p-4">
+                <div class="text-2xl font-bold text-emerald-400 mb-1">100%</div>
+                <div class="text-sm text-slate-400">Satisfaction</div>
+              </div>
+              <div class="text-center p-4">
+                <div class="text-2xl font-bold text-orange-400 mb-1">24/7</div>
+                <div class="text-sm text-slate-400">Available</div>
+              </div>
+            </div>
+
+            <!-- Enhanced Buttons -->
+            <div
+              class="home-btns flex flex-col sm:flex-row gap-4 justify-center pt-8"
+            >
+              <button
+                class="group relative px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-semibold rounded-2xl shadow-xl shadow-cyan-500/25 hover:shadow-2xl hover:shadow-cyan-500/40 transform hover:-translate-y-1 transition-all duration-300 overflow-hidden"
+              >
+                <span class="relative z-10 flex items-center gap-2">
+                  View Skills
+                  <svg
+                    class="w-5 h-5 group-hover:translate-x-1 transition-transform"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </span>
+                <div
+                  class="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent -skew-x-12 transform -translate-x-[100%] group-hover:translate-x-[100%] transition-transform duration-1000"
+                ></div>
+              </button>
+
+              <button
+                class="px-8 py-4 border-2 border-slate-700 hover:border-slate-500 text-slate-300 hover:text-white font-semibold rounded-2xl backdrop-blur-sm hover:bg-slate-800/50 shadow-xl hover:shadow-2xl hover:shadow-slate-500/25 transform hover:-translate-y-1 transition-all duration-300"
+              >
+                Download CV
+              </button>
+            </div>
+
+            <!-- Floating Particles (Optional Subtle Effect) -->
+            <div
+              class="absolute top-10 right-10 w-20 h-20 bg-gradient-to-br from-purple-500/10 to-pink-500/10 rounded-full blur-xl animate-float-slow opacity-60 hidden lg:block"
+            ></div>
+            <div
+              class="absolute bottom-10 left-10 w-16 h-16 bg-gradient-to-br from-cyan-500/10 to-blue-500/10 rounded-full blur-xl animate-float opacity-60 hidden lg:block"
+            ></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <div class="projects-cont pt-20">
+          <div class="project-cont">
+            <h1 class=" section-title">Projects</h1>
+            <div class="mt-5 flex flex-col g-5">
+              <div class="project-card">
+                <div class="project-image-container">
+                  <img
+                    src="/img/Screenshot 2026-04-07 203820.png"
+                    alt="Crypto Dashboard"
+                    class="project-screenshot"
+                  />
+                  <div class="image-overlay">
+                    <div class="overlay-content">
+                      <div class="tech-tags">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag live">Live Data</span>
+                      </div>
+                      <h3 class="overlay-title">Crypto Dashboard</h3>
+                      <p class="overlay-desc">Real-time portfolio tracker</p>
+                      <div class="overlay-buttons">
+                        <a href="#" class="btn-overlay">
+                          <i class="fas fa-eye me-2"></i>Live Demo
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-10 bg-blue-900">
+                <h1 class="text-2xl text-center" style="font-weight: 900">
+                  ...And other corporate project
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <div class="">
+          <div class="about-cont my-10">
+            <h1 class=" upp text-center section-title">Skills</h1>
+          </div>
+          <div class="skill-icons px-4 flex-col items-center">
+            <div class="skills-aa">
+              <div class="frontend upp">
+                <h1
+                  class="bold text-md white-bg gradient-text text-center text-2xl"
+                >
+                  Desktop Apps
+                </h1>
+                <div
+                  class="flex flex-wrap frontend-skill-cont g-10 justify-content-center"
+                >
+                  <div class="skill-item">
+                    <img
+                      src="svg/csharp-svgrepo-com.svg"
+                      alt="C#"
+                      class="skill-icon"
+                    />
+                    <span class="skill-label">C#</span>
+                  </div>
+                  <div class="skill-item">
+                    <img
+                      src="svg/vb-svgrepo-com.svg"
+                      alt="VB.NET"
+                      class="skill-icon"
+                    />
+                    <span class="skill-label">VB.NET</span>
+                  </div>
+                  <div class="skill-item">
+                    <img
+                      src="svg/dotnet-svgrepo-com.svg"
+                      alt="VB.NET"
+                      class="skill-icon"
+                    />
+                    <span class="skill-label">.NET / .NET framework</span>
+                  </div>
+                </div>
+              </div>
+              <div class="frontend upp">
+                <h1
+                  class="bold text-md white-bg gradient-text text-center text-2xl"
+                >
+                  Frontend
+                </h1>
+                <div
+                  class="flex flex-wrap g-10 frontend-skill-cont justify-content-center"
+                >
+                  <div class="skill-item">
+                    <img
+                      src="svg/html-svgrepo-com.svg"
+                      alt="HTML5"
+                      class="skill-icon"
+                    />
+                    <span class="skill-label">HTML5</span>
+                  </div>
+                  <div class="skill-item">
+                    <img
+                      src="svg/css-svgrepo-com.svg"
+                      alt="CSS3"
+                      class="skill-icon"
+                    />
+                    <span class="skill-label">CSS3</span>
+                  </div>
+                  <div class="skill-item">
+                    <img
+                      src="svg/js-svgrepo-com.svg"
+                      alt="JavaScript"
+                      class="skill-icon"
+                    />
+                    <span class="skill-label">JavaScript</span>
+                  </div>
+                  <div class="skill-item">
+                    <img
+                      src="svg/bootstrap-svgrepo-com.svg"
+                      alt="Bootstrap"
+                      class="skill-icon"
+                    />
+                    <span class="skill-label">Bootstrap</span>
+                  </div>
+                  <div class="skill-item">
+                    <img
+                      src="svg/tailwind-svgrepo-com.svg"
+                      alt="Tailwind"
+                      class="skill-icon"
+                    />
+                    <span class="skill-label">Tailwind</span>
+                  </div>
+                  <div class="skill-item">
+                    <img
+                      src="svg/react-svgrepo-com.svg"
+                      alt="React"
+                      class="skill-icon"
+                    />
+                    <span class="skill-label">React</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Backend Section -->
+              <div class="frontend upp backend-section">
+              <h1
+                  class="bold text-md white-bg gradient-text text-center text-2xl"
+                >
+                  Backend
+                </h1>
+                <div
+                  class="flex flex-wrap g-10 frontend-skill-cont justify-content-center"
+                >
+                  <div class="skill-item">
+                    <img
+                      src="svg/php-svgrepo-com.svg"
+                      alt="PHP"
+                      class="skill-icon"
+                    />
+                    <span class="skill-label">PHP</span>
+                  </div>
+                  <div class="skill-item">
+                    <img
+                      src="svg/laravel-svgrepo-com.svg"
+                      alt="Laravel"
+                      class="skill-icon"
+                    />
+                    <span class="skill-label">Laravel</span>
+                  </div>
+                  <div class="skill-item">
+                    <img
+                      src="svg/codeigniter-svgrepo-com.svg"
+                      alt="CodeIgniter"
+                      class="skill-icon"
+                    />
+                    <span class="skill-label">CodeIgniter</span>
+                  </div>
+                  <div class="skill-item">
+                    <img
+                      src="svg/nodejs-svgrepo-com.svg"
+                      alt="Node.js"
+                      class="skill-icon"
+                    />
+                    <span class="skill-label">Nodejs</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Database Section -->
+              <div class="frontend upp database-section">
+               <h1
+                  class="bold text-md white-bg gradient-text text-center text-2xl"
+                >
+                  Database
+                </h1>
+                <div
+                  class="flex flex-wrap g-10 frontend-skill-cont justify-content-center"
+                >
+                  <div class="skill-item">
+                    <img
+                      src="svg/mysql-logo-svgrepo-com.svg"
+                      alt="MySQL"
+                      class="skill-icon"
+                    />
+                    <span class="skill-label">MySQL</span>
+                  </div>
+                  <div class="skill-item">
+                    <img
+                      src="svg/mongo-svgrepo-com.svg"
+                      alt="MongoDB"
+                      class="skill-icon"
+                    />
+                    <span class="skill-label">MongoDB</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="background" class="background">
+        <h1 class="text-center section-title">Background</h1>
+        <div class="timeline">
+          <div class="line-container">
+            <div class="line"></div>
+            <div class="line-fill"></div>
+          </div>
+
+          <div class="timeline-items">
+            <div class="item right exp-cont">
+              <h3>Current Position</h3>
+              <p>Web Developer</p>
+              <p>Tarellia Solutions OPC</p>
+              <p class="date">March 2026 - Present</p>
+            </div>
+            <div class="item left exp-cont">
+              <h3>Work Experience</h3>
+              <p>Associate Systems Developer</p>
+              <p>Sumidenso Automotive Technologies Asia</p>
+              <p class="date">Jun 2025 - Feb 2026</p>
+            </div>
+            <div class="item right exp-cont">
+              <h3>Internship</h3>
+              <p>Quality Assurance</p>
+              <p>Tarellia Solutions OPC</p>
+              <p class="date">Feb 2025 - May 2026</p>
+            </div>
+            <div class="item left exp-cont">
+              <h3>Education</h3>
+              <p>Bachelor of Science in Information Technology</p>
+              <p>Don Honorio Ventura State University</p>
+              <p class="date">Sep 2021 - Aug 2026</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="ContactMe">
+        <div class="contact-container">
+          <h2 section-title>Contact Me</h2>
+
+          <form id="contactForm" class="max-w-2xl mx-auto sm:p-6 lg:p-8">
+            <!-- Two-column responsive row -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6">
+              <div class="form-group">
+                <label for="user_name" class="block text-sm font-medium mb-2"
+                  >Name</label
+                >
+                <input
+                  type="text"
+                  id="user_name"
+                  name="user_name"
+                  placeholder="Your Name"
+                  required
+                  class="form-control w-full"
+                />
+              </div>
+              <div class="form-group">
+                <label for="subject" class="block text-sm font-medium mb-2"
+                  >Subject</label
+                >
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="What's this about?"
+                  required
+                  class="form-control w-full"
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="user_email" class="block text-sm font-medium mb-2"
+                >Email</label
+              >
+              <input
+                type="email"
+                id="user_email"
+                name="user_email"
+                placeholder="your@email.com"
+                required
+                class="form-control w-full"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="block text-sm font-medium mb-2"
+                >Message</label
+              >
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Tell me what can i do for you..."
+                required
+                rows="4"
+                class="form-control w-full resize-vertical min-h-[100px]"
+              ></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn w-full">
+              Send Message
+            </button>
+          </form>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="successModal"
+            tabindex="-1"
+            aria-hidden="true"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content bg-dark text-light">
+                <div class="modal-header border-0">
+                  <h5 class="modal-title">🎉 Message Sent!</h5>
+                </div>
+                <div class="modal-body">I’ll reply within 24 hours.</div>
+                <div class="modal-footer border-0">
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-dismiss="modal"
+                    onclick="confirmModal()"
+                  >
+                    OK
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="status" class="message"></div>
+        </div>
+      </section>
+
+      <!-- About Section -->
     </main>
-  <script src="https://unpkg.com/three@0.160.0/examples/js/loaders/GLTFLoader.js"></script>
-  <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-  <script src="script.js"></script>
-  <script src="/js/3daAnim.js"></script>
-</body>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script src="https://unpkg.com/three@0.160.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+    <script src="/js/3daAnim.js"></script>
+  </body>
 </html>
