@@ -1,28 +1,34 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
 
-@media screen and (min-width: 1200px) {
-    #my-model2{
-        width: 500px;
-        height: 400px;
-        top: 50%;
-        right: -5% ;
-        transform: translate(-50%, -50%);
-        position: fixed;
-    }
-    .model{
-        right: 10vw;
-        top: 10vh;
-    }
-    .frontend span img{
-        width: 60px;
-    }
-    .frontend-skill-cont{
-        gap: 3%;
-    }
-    .skills-aa{
-        width: 60%;
-    }
-    .exp-cont {
-       margin: 150px 0; 
-    }
+@media screen and (min-width: 920px) {
+  #heroModel {
+    width: 500px;
+    height: 400px;
+    top: 30%;
+
+
+  }
+  .model {
+    top: 15vh;
+
+    right: 0;
+  }
+  .hero-img {
+    right: 0;
+  }
+  .frontend span img {
+    width: 60px;
+  }
+  .frontend-skill-cont {
+    gap: 3%;
+  }
+  .skills-aa {
+    width: 60%;
+  }
+  .exp-cont {
+    margin: 150px 0;
+  }
+  .skill-item {
+    width: 210px;
+  }
 }

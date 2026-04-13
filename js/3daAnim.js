@@ -4,9 +4,6 @@ const model = document.querySelector("#heroModel");
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(Flip);
 
-gsap.set("#heroModel", { x: 100, y: -50 });
-
-
 
 gsap.utils.toArray(".frontend").forEach((section) => {
 
