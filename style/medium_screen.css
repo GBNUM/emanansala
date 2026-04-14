@@ -5,8 +5,6 @@
     width: 500px;
     height: 400px;
     top: 30%;
-
-
   }
   .model {
     top: 15vh;
@@ -15,6 +13,9 @@
   }
   .hero-img {
     right: 0;
+  }
+  .home-btns button{
+    width: 150px
   }
   .frontend span img {
     width: 60px;
