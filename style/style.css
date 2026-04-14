@@ -2,6 +2,7 @@
 
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 .b {
@@ -85,10 +86,9 @@ span i {
   padding: 20px 7%;
 }
 
-#heroModel{
-    width: 200px;
-    height: 200px;
-   
+#heroModel {
+  width: 200px;
+  height: 200px;
 }
 .ready-to-innovate {
   background: linear-gradient(to right, #bf03b2, var(--secondary));
@@ -125,7 +125,7 @@ span i {
 .home-img {
   justify-content: center;
   display: flex;
-  margin-top: 30px
+  margin-top: 30px;
 }
 
 .home-skills span {
@@ -143,6 +143,9 @@ span i {
   color: var(--primary);
   border-radius: 5px;
 }
+.bg{
+  background: var(--fifth);
+}
 
 nav {
   display: flex;
@@ -155,7 +158,7 @@ nav {
   align-items: center;
   font-family: "Archivo Black", sans-serif;
   background: var(--fifth);
-  z-index: 8888;
+  z-index: 99;
 }
 
 nav a {
@@ -164,7 +167,8 @@ nav a {
   font-size: 13px;
 }
 
-.section-title, .projects {
+.section-title,
+.projects {
   background: linear-gradient(to left, #bf03b2, var(--secondary));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -216,7 +220,7 @@ nav a {
 .model3d {
   width: 300px;
   height: 300px;
-  left: 0
+  left: 0;
 }
 
 #skills {
@@ -374,12 +378,17 @@ nav a {
   margin: 0 auto;
 }
 
+nav a{
+  position: relative;
+  z-index: 100;
+}
+
 .skill-item {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1.5rem 2rem;
+  padding: .5rem;
   background: linear-gradient(
     145deg,
     rgba(88, 14, 246, 0.15),
@@ -425,7 +434,7 @@ nav a {
 .skill-label {
   color: var(--primary);
   font-weight: 700;
-  font-size: clamp(.8rem, 1rem, 1.5rem);
+  font-size: clamp(0.4rem, .8rem, 1.2rem);
   text-transform: uppercase;
   letter-spacing: 1px;
   position: relative;
@@ -471,12 +480,6 @@ nav a {
   }
 }
 
-.skill-item:nth-child(1):hover {
-  animation: glow 2s infinite;
-}
-.skill-item:nth-child(2):hover {
-  animation: glow 2s 0.2s infinite;
-}
 
 .project-image-container {
   position: relative;
@@ -484,7 +487,7 @@ nav a {
   height: 400px;
   border-radius: 24px;
   overflow: hidden;
-  align-items: center;;
+  align-items: center;
   box-shadow:
     0 25px 60px rgba(0, 0, 0, 0.5),
     0 0 0 1px rgba(88, 14, 246, 0.3);
@@ -940,7 +943,7 @@ textarea {
   padding: 2rem;
   border-radius: 20px;
 }
-.hero h1{
+.hero h1 {
   font-size: clamp(1.8rem, 2rem, 3rem);
   opacity: 0.95;
   letter-spacing: 2px;
@@ -964,7 +967,6 @@ textarea {
 }
 .about-img-container {
   position: relative;
-  
 }
 .about-img {
   width: 70%;
@@ -975,7 +977,6 @@ textarea {
 }
 .about-img:hover {
   transform: scale(1.1) !important;
-
 }
 .about-content h2 {
   font-size: clamp(2.8rem, 6vw, 5rem);
@@ -1048,7 +1049,7 @@ textarea {
 
 /* Subtitle - Modern gradient */
 .hero-content p {
-  font-size: clamp(.6rem, 1rem, 1.5rem);
+  font-size: clamp(0.6rem, 1rem, 1.5rem);
   font-weight: 400;
   color: rgba(255, 255, 255, 0.95);
   letter-spacing: 0.05em;
@@ -1066,7 +1067,6 @@ textarea {
   display: inline-block;
   box-shadow: 0 8px 32px rgba(139, 92, 246, 0.15);
 }
-
 
 .hero-content:hover p {
   background: linear-gradient(

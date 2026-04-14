@@ -32,4 +32,7 @@
   .skill-item {
     width: 210px;
   }
+  .skill-item{
+    padding: 30px;
+  }
 }

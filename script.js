@@ -130,3 +130,24 @@ function confirmModal() {
   document.getElementById("successModal").classList.remove("show");
 }
 
+
+  const btn = document.getElementById("cvBtn");
+  const modal = document.getElementById("cvModal");
+  const close = document.getElementById("closeModal");
+
+  btn.addEventListener("click", () => {
+    modal.classList.remove("opacity-0", "pointer-events-none");
+    modal.firstElementChild.classList.remove("scale-95");
+
+    // 🔒 disable scroll
+    document.body.classList.add("overflow-hidden");
+  });
+
+  close.addEventListener("click", () => {
+    modal.classList.add("opacity-0", "pointer-events-none");
+    modal.firstElementChild.classList.add("scale-95");
+
+    // 🔓 enable scroll back
+    document.body.classList.remove("overflow-hidden");
+  });
+

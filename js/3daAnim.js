@@ -193,7 +193,7 @@ gsap.from(".about-content h2", {
     ease: "ease.in",
     scrollTrigger: {
         trigger: ".about-content h2",
-        start: "top 70%"
+        start: "top 80%"
     }
 });
 

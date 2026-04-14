@@ -27,20 +27,66 @@
                 <span><i class="fa-regular fa-file-lines"></i></span>
         </div>
         <div class="w-max mt-3 p-title">
-            <h1 class="text-4xl font-extrabold">Welcome to my</h1>
-            <h1 class="text-4xl font-extrabold p-website-title">Portfolio Website</h1>
+            <h1 class="text-3xl font-extrabold">Welcome to my</h1>
+            <h1 class="text-3xl font-extrabold p-website-title">Portfolio Website</h1>
         </div>
         <div class="mt-10 www-com ">
           <p><i class="fa-solid fa-earth-americas"></i> www.com</p>
         </div>
     </div>
    </div>-->
-    <nav class="w-100 justify-center md:justify-end md:pr-10">
-      <a href="">Home</a>
-      <a href="">Skills</a>
-      <a href="">About</a>
-      <a href="">Projects</a>
-      <a href="">Contact</a>
+    <nav
+      class="w-full flex justify-center md:justify-end md:pr-10 gap-10 text-white"
+    >
+      <a
+        href="#"
+        class="relative group text-sm md:text-base font-medium tracking-wide transition duration-300 hover:text-blue-400 hover:-translate-y-0.5"
+      >
+        Home
+        <span
+          class="absolute left-0 bottom-0 w-full h-[2px] bg-blue-900 scale-x-0 origin-center transition-transform duration-300 group-hover:scale-x-100"
+        ></span>
+      </a>
+
+      <a
+        href="#skills"
+        class="relative group text-sm md:text-base font-medium tracking-wide transition duration-300 hover:text-blue-400 hover:-translate-y-0.5"
+      >
+        Skills
+        <span
+          class="absolute left-0 bottom-0 w-full h-[2px] bg-blue-900 scale-x-0 origin-center transition-transform duration-300 group-hover:scale-x-100"
+        ></span>
+      </a>
+
+      <a
+        href="#about"
+        class="relative group text-sm md:text-base font-medium tracking-wide transition duration-300 hover:text-blue-400 hover:-translate-y-0.5"
+      >
+        About
+        <span
+          class="absolute left-0 bottom-0 w-full h-[2px] bg-blue-900 scale-x-0 origin-center transition-transform duration-300 group-hover:scale-x-100"
+        ></span>
+      </a>
+
+      <a
+        href="#projects"
+        class="relative group text-sm md:text-base font-medium tracking-wide transition duration-300 hover:text-blue-400 hover:-translate-y-0.5"
+      >
+        Projects
+        <span
+          class="absolute left-0 bottom-0 w-full h-[2px] bg-blue-900 scale-x-0 origin-center transition-transform duration-300 group-hover:scale-x-100"
+        ></span>
+      </a>
+
+      <a
+        href="#ContactMe"
+        class="relative group text-sm md:text-base font-medium tracking-wide transition duration-300 hover:text-blue-400 hover:-translate-y-0.5"
+      >
+        Contact
+        <span
+          class="absolute left-0 bottom-0 w-full h-[2px] bg-blue-900 scale-x-0 origin-center transition-transform duration-300 group-hover:scale-x-100"
+        ></span>
+      </a>
     </nav>
     <main class="body">
       <div id="home" class="pt-10 md:pt-0">
@@ -71,13 +117,40 @@
               <button
                 class="read-more-btn px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg text-sm md:text-base hover:bg-blue-700 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
               >
-                Read more
+                <a href="#about">Read more</a>
               </button>
               <button
+                id="cvBtn"
                 class="read-more-btn px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg text-sm md:text-base hover:bg-blue-700 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
               >
                 Download CV
               </button>
+            </div>
+          </div>
+          <div
+            id="cvModal"
+            class="fixed inset-0 bg-black/50 flex items-center justify-center opacity-0 pointer-events-none transition duration-300"
+          >
+            <div
+              class="bg text-white p-6 rounded-xl shadow-xl w-[90%] max-w-sm text-center transform scale-95 transition duration-300"
+            >
+              <h2 class="text-lg font-semibold mb-3">Notice</h2>
+              <p class="text-gray-300 mb-5">CV currently not available.</p>
+              <p>You can send me an Email below</p>
+              <div class="flex justify-center gap-4 mt-5">
+                <button
+                id="closeModal"
+                class="px-5 py-2 bg-blue-900 rounded-lg hover:bg-blue-700 transition closeModal"
+              >
+                OK
+              </button>
+              <button
+                id=""
+                class="px-5 py-2 bg-blue-600 rounded-lg hover:bg-blue-700 transition closeModal"
+              >
+                <a href="#ContactMe">Send Email</a>
+              </button>
+              </div>
             </div>
           </div>
           <div class="home-img items-end">
@@ -104,7 +177,7 @@
           <p>Full Stack Developer</p>
         </div>
       </section>
-      <section class="about">
+      <section class="about" id="about">
         <div class="about-img-container flex justify-center">
           <img
             src="img/me4.png"
@@ -119,7 +192,7 @@
             <div class="flex justify-center"></div>
 
             <h2
-              class="section-title text-4xl lg:text-5xl font-bold text-center bg-gradient-to-r from-white via-slate-200 to-slate-300 bg-clip-text text-transparent drop-shadow-lg hover:drop-shadow-2xl transition-all duration-300"
+              class="text-4xl lg:text-5xl font-bold text-center bg-gradient-to-r from-white via-slate-200 to-slate-300 bg-clip-text text-transparent drop-shadow-lg hover:drop-shadow-2xl transition-all duration-300"
             >
               <strong>About Me</strong>
             </h2>
@@ -146,7 +219,7 @@
                 <div class="text-sm text-slate-400">Projects</div>
               </div>
               <div class="text-center p-4">
-                <div class="text-2xl font-bold text-purple-400 mb-1">3+</div>
+                <div class="text-2xl font-bold text-purple-400 mb-1">2+</div>
                 <div class="text-sm text-slate-400">Years Exp</div>
               </div>
               <div class="text-center p-4">
@@ -166,7 +239,7 @@
               <button
                 class="read-more-btn px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg text-sm md:text-base hover:bg-blue-700 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
               >
-                Read more
+                <a href="#skills">View Skills</a>
               </button>
               <button
                 class="read-more-btn px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg text-sm md:text-base hover:bg-blue-700 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
@@ -184,7 +257,7 @@
             <h1 class="projects">Projects</h1>
             <div class="mt-5 flex flex-col g-5">
               <div class="project-card">
-                <div class="project-image-container p-3 ">
+                <div class="project-image-container p-3">
                   <img
                     src="img/Screenshot 2026-04-07 203820.png"
                     alt="Crypto Dashboard"
@@ -206,7 +279,9 @@
                   </div>
                 </div>
               </div>
-               <div class="project-image-container p-3 mt-10 flex item-center justify-center">
+              <div
+                class="project-image-container p-3 mt-10 flex item-center justify-center"
+              >
                 <h1 class="text-2xl text-center" style="font-weight: 900">
                   ...And other corporate project
                 </h1>
