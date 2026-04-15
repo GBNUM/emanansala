@@ -305,7 +305,7 @@ document.addEventListener('DOMContentLoaded', () => {
       { 
         x: startX,
         opacity: 0,
-        scale: 0
+        scale: 0,
       },
       {
         x: 0,
@@ -317,7 +317,7 @@ document.addEventListener('DOMContentLoaded', () => {
           trigger: item,
           start: "top 85%",
           end: "bottom 60%",
-          toggleActions: "play none none reverse"
+          toggleActions: "play none none reverse",
         }
       }
     );
